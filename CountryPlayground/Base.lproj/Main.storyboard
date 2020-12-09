@@ -66,6 +66,13 @@
                                     <action selector="resultButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lck-ne-ocI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Такой страны нет в программе. Попробуйте ввести название другой страны." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-ZZ-Z0O">
+                                <rect key="frame" x="37" y="331" width="341" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -80,13 +87,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9g-8Z-ELJ" secondAttribute="trailing" constant="106" id="Rdd-8e-3Gq"/>
                             <constraint firstItem="281-YR-1i9" firstAttribute="top" secondItem="pVr-2Y-E9y" secondAttribute="bottom" constant="40" id="gOF-GH-sVr"/>
                             <constraint firstItem="kOl-gi-yvR" firstAttribute="top" secondItem="f9g-8Z-ELJ" secondAttribute="bottom" constant="35" id="oR4-JP-VP1"/>
+                            <constraint firstItem="xqA-8n-qnF" firstAttribute="top" secondItem="281-YR-1i9" secondAttribute="bottom" constant="31" id="s9g-P9-lBF"/>
                             <constraint firstItem="f9g-8Z-ELJ" firstAttribute="top" secondItem="OtI-cj-sIr" secondAttribute="bottom" constant="34" id="un0-I1-cmZ"/>
-                            <constraint firstItem="xqA-8n-qnF" firstAttribute="top" secondItem="kOl-gi-yvR" secondAttribute="bottom" constant="31" id="vxd-Fa-PLD"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="countryCode" destination="f9g-8Z-ELJ" id="a2M-Yb-bbc"/>
                         <outlet property="countryFlag" destination="kOl-gi-yvR" id="vf5-7C-16q"/>
+                        <outlet property="errorMessage" destination="ljp-ZZ-Z0O" id="HS8-ni-iYJ"/>
                         <outlet property="resultButton" destination="xqA-8n-qnF" id="ySr-oT-cAD"/>
                         <outlet property="textField" destination="OtI-cj-sIr" id="URP-eY-gRO"/>
                     </connections>
